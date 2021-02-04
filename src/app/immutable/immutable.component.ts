@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImmutableComponent implements OnInit {
 
-  data1: any;
+  public data1: any;
 
   constructor() { }
 

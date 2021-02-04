@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImmutableComponent } from './immutable/immutable.component';
 import { ImmutableChildComponent } from './immutable/immutable-child/immutable-child.component';
+import { DirectivComponent } from './directiv/directiv.component';
+import { CardEffectDirective } from './card-effect.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImmutableComponent,
-    ImmutableChildComponent
+    ImmutableChildComponent,
+    DirectivComponent,
+    CardEffectDirective
   ],
   imports: [
     BrowserModule,
