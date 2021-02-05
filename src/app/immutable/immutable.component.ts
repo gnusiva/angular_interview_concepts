@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImmutableComponent implements OnInit {
 
   public data1: any;
+  showChild = true;
 
   constructor() { }
 
@@ -24,6 +25,10 @@ export class ImmutableComponent implements OnInit {
 
   getdata1(): void {
     console.log(this.data1)
+  }
+
+  destroyimmuchild(): void {
+    this.showChild = false;
   }
 
 }
