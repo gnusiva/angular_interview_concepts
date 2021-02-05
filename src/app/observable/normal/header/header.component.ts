@@ -11,7 +11,9 @@ export class HeaderComponent implements OnInit {
   count = 0;
 
   constructor(public api: ApiService) {
-    this.count = this.api.length;
+    this.api.length.subscribe( (data: any) => {
+      this.count = data;
+    });
   }
 
   ngOnInit(): void {

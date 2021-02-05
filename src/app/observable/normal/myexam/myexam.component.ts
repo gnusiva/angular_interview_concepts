@@ -17,7 +17,7 @@ export class MyexamComponent implements OnInit {
     this.api.getBackendData().subscribe( (data: any ) => {
       this.arr = data.key3;
       this.leng = this.arr.length;
-      this.api.length = this.leng;
+      this.api.length.next( this.leng );
     });
   }
 
