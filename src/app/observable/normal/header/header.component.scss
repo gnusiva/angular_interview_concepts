@@ -1,0 +1,19 @@
+
+
+.parent-box {
+  position: relative;
+}
+
+.notification-count {
+  background: green;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  height: 15px;
+  width: 15px;
+
+  position: absolute;
+  right: -4px;
+  top: -3px;
+}

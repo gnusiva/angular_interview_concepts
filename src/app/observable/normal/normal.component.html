@@ -1,0 +1,15 @@
+
+<div class="h-100 w-100 d-flex flex-column" >
+  <div class="d-flex border-bottom">
+    <div class="w-100" ><app-header ></app-header></div>
+  </div>
+  <div class="d-flex flex-grow-1">
+    <div class="d-flex flex-column border-end">
+      <app-leftnav (menuSelected)="currentPage = $event"  ></app-leftnav>
+    </div>
+    <div class="flex-grow-1">
+      <app-myexam *ngIf=" currentPage == 'myexam' "  ></app-myexam>
+      <app-dashboard *ngIf=" currentPage == 'dashboard' " ></app-dashboard>
+    </div>
+  </div>
+</div>
