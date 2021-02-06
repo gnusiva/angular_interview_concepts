@@ -8,6 +8,7 @@ import { ImmutableChildComponent } from './immutable/immutable-child/immutable-c
 import { DirectivComponent } from './directiv/directiv.component';
 import { CardEffectDirective } from './card-effect.directive';
 import { OnPushDetectionComponent } from './on-push-detection/on-push-detection.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OnPushDetectionComponent } from './on-push-detection/on-push-detection.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
