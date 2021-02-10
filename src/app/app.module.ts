@@ -7,6 +7,7 @@ import { ImmutableComponent } from './immutable/immutable.component';
 import { ImmutableChildComponent } from './immutable/immutable-child/immutable-child.component';
 import { DirectivComponent } from './directiv/directiv.component';
 import { CardEffectDirective } from './card-effect.directive';
+import { FormControlComponent } from './form-control/form-control.component';
 
 @NgModule({
   declarations: [

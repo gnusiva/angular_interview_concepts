@@ -1,0 +1,7 @@
+<div class="d-flex flex-column">
+  <div *ngFor="let item of arr1" class="d-flex p-2 border m-2">
+    <div class="me-2"><input  type="checkbox" [formControl]="item.control" ></div>
+    <div class="me-2">{{item.name}}</div>
+    <div class="me-2">{{item.age}}</div>
+  </div>
+</div>
