@@ -1,0 +1,10 @@
+Array Length: {{arr.length}}
+<div class="border" *ngFor="let item of (arr | showAbove5 : 0.6 )">
+  {{item}}
+</div>
+{{num | addFive }}
+<br>
+{{str | json  }}
+<br>
+{{dd | monthYear }}
+<br>
